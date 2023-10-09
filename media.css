@@ -1,0 +1,86 @@
+@media (max-width: 1000px) {
+  .container::before {
+    transform: translate(-296px, -428px);
+  }
+  .container::after {
+    transform: translate(306px, 410px);
+  }
+  .contains {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+  }
+  .container .box {
+    height: 73vh;
+  }
+  .container .box1 .ball3 {
+    transform: translate(390px, 22px);
+  }
+  .container .box1 .ball2 {
+    transform: translate(508px, -351px);
+  }
+  .container .box1 .ball1 {
+    transform: translate(84px, 211px);
+  }
+  .data::after {
+    left: 390px;
+  }
+  .btn1 {
+    width: 15%;
+    margin-left: 378px;
+  }
+  .History {
+    height: 40vh;
+  }
+  .third-section {
+    height: 114vh;
+  }
+  .third-section .teachers {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .about1 {
+    margin: 0px 172px;
+  }
+  .member {
+    padding: 5px;
+    display: flex;
+    flex-direction: coloumn;
+    justify-content: center;
+    text-align: center;
+  }
+  .about1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .btn2 {
+    margin-left: 400px;
+    margin-top: 50px;
+  }
+  .fifth-section {
+    height: 125vh;
+  }
+  .fourth-section .all-cources {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    margin: 50px;
+  }
+  .btn3 {
+    margin-left: 400px;
+    margin-top: 10px;
+    width: 15%;
+  }
+  .pictures {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    margin: 80px;
+  }
+  .msg {
+    margin: 0px 120px;
+    margin-top: 10px;
+    font-size: 25px;
+  }
+  .two {
+    margin-top: 10px;
+    font-size: 30px;
+  }
+}

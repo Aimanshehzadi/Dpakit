@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0%;
+  font-family: sans-serif;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ---------------============left circule============--------------- */
+.container::before {
+  content: "";
+  position: absolute;
+  height: 308px;
+  width: 318px;
+  border-radius: 275px;
+  background: linear-gradient(rgb(7, 155, 241), yellow);
+  transform: translate(-490px, -150px);
+}
+/* ----------------============right circule==============--------------- */
+.container::after {
+  content: "";
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 275px;
+  background: linear-gradient(rgb(241, 241, 7), red);
+  transform: translate(490px, 150px);
+}
+/* -----------===========background small circule=============---------------- */
+.container .box1 .ball1 {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background: rgb(43, 245, 3);
+  transform: translate(136px, 144px);
+  position: absolute;
+}
+.container .box1 .ball2 {
+  height: 62px;
+  width: 62px;
+  border-radius: 50px;
+  background: rgb(21, 181, 245);
+  transform: translate(470px, -220px);
+  position: absolute;
+}
+.container .box1 .ball3 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background: rgb(248, 232, 5);
+  transform: translate(619px, 200px);
+  position: absolute;
+}
+/* ----------=============blur part (div)=========--------------- */
+.container .box {
+  height: 86vh;
+  width: 75%;
+  padding: 0, 20px;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 10;
+  position: relative;
+  border-radius: 20px;
+  border: 2px solid rgba(225, 225, 225, 0.2);
+  backdrop-filter: blur(25px);
+  box-shadow: -15px 17px 17px rbga(10, 10, 10, 0.2);
+}
+/* -------------============logo==========--------------------- */
+.box nav .logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+span {
+  color: red;
+  font-weight: bold;
+  font-weight: 100;
+}
+/* -------------============nav bar part============--------------- */
+.container .box nav {
+  height: 7%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 15px auto;
+  padding: 20px;
+}
+.container .box nav ul {
+  display: flex;
+  list-style: none;
+}
+.container .box nav ul li {
+  padding: 10px;
+}
+.container .box nav ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.container .box nav ul li a:hover {
+  color: red;
+}
+.contains {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr;
+}
+/* -----------===========heading part=========--------------- */
+.contains .part1 .heading {
+  font-size: 5em;
+  padding-top: 31px;
+  margin-left: 1em;
+  word-spacing: -5px;
+  color: whitesmoke;
+}
+/* -------------==========paragraph part of second==========----------------- */
+.contains .part1 .paragraph {
+  font-size: 1.2em;
+  margin-left: 3.5em;
+  color: whitesmoke;
+}
+/* ----------==============2nd section========---------------------- */
+/* --------------===========2nd section background==========--------------- */
+.History {
+  background-color: #17171a;
+  height: 70vh;
+  width: 100%;
+}
+/* -------------=============== heading part==========----------------- */
+.data {
+  color: whitesmoke;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 49px;
+  /* word-spacing: 10px; */
+}
+.data::after {
+  content: "";
+  position: absolute;
+  bottom: -104px;
+  height: 4px;
+  width: 15%;
+  left: 578px;
+  background-color: red;
+  border-radius: 5px;
+}
+
+/* ----------===========paragraph part of second section===========-------------- */
+.para1 {
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 50px;
+  line-height: 20px;
+}
+/* --------=========button of second section============----------- */
+.btn1 {
+  height: 50px;
+  width: 10%;
+  background-color: orange;
+  font-size: 1.5em;
+  transform: skewX(-40deg);
+  border: 1px solid orange;
+  border-radius: 6px;
+  margin-left: 597px;
+  margin-top: 47px;
+}
+.more {
+  transform: skewX(40deg);
+  font-size: 1em;
+}
+/* -------------===============thired section==========------------------- */
+.third-section {
+  background-color: #1d1c1c;
+  width: 100%;
+  height: 130vh;
+}
+/* ----------=============upper heading of third section=========--------------- */
+.staff {
+  text-align: center;
+  color: orange;
+  padding-top: 40px;
+}
+/* --------------============second heading of second section==========---------------- */
+.instructors {
+  text-align: center;
+  color: whitesmoke;
+  padding-top: 40px;
+  font-size: 50px;
+  font-family: sarif;
+}
+/* ---------==============picture part of thired section==========------------- */
+.third-section .teachers {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 1fr;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+/* -----------==========name of the teachers=======--------------- */
+.name {
+  color: orange;
+  margin-top: 10px;
+}
+.name:hover {
+  font-size: 27px;
+}
+/* --------=========for paragraph=========-------------- */
+.about1 {
+  color: whitesmoke;
+  margin-top: 5px;
+}
+.member {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* ----------============button of thired section============---------- */
+.btn2 {
+  height: 50px;
+  width: 10%;
+  background-color: orange;
+  font-size: 1.5em;
+  transform: skewX(-40deg);
+  border: 1px solid orange;
+  border-radius: 6px;
+  margin-left: 597px;
+}
+.btn2 a {
+  text-decoration: none;
+  color: black;
+}
+/* -------------============fourth  section===========----------------- */
+.fourth-section {
+  background-color: #17171a;
+  height: 190vh;
+  width: 100%;
+}
+/* -----------------=============heading=========------------------- */
+.sub {
+  text-align: center;
+  color: orange;
+  padding-top: 40px;
+}
+/* ----------==========cources part=========----------------- */
+.about-cources {
+  text-align: center;
+  color: whitesmoke;
+  padding-top: 40px;
+  font-size: 50px;
+  font-family: sarif;
+}
+.fourth-section .all-cources {
+  padding-top: 48px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.1rem;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+.cources {
+  padding: 15px 15px 15px 15px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(41, 38, 38);
+  border-radius: 3rem;
+}
+/* -----------=========about cources=========--------------- */
+.headding-1 {
+  color: orange;
+  padding-top: 20px;
+}
+.para-1 {
+  color: whitesmoke;
+  padding-top: 10px;
+}
+/* ------------===========button part==========------------- */
+.btn3 {
+  height: 50px;
+  width: 13%;
+  background-color: orange;
+  font-size: 1.5em;
+  transform: skewX(-40deg);
+  border: 1px solid orange;
+  border-radius: 6px;
+  margin-left: 597px;
+  margin-top: 94px;
+}
+.btn3 a {
+  text-decoration: none;
+  color: black;
+}
+.fifth-section {
+  background-color: #1d1c1c;
+  width: 100%;
+  height: 100vh;
+}
+.comment {
+  text-align: center;
+  color: orange;
+  padding-top: 40px;
+}
+.about-comment {
+  text-align: center;
+  word-spacing: 14px;
+  color: whitesmoke;
+  padding-top: 40px;
+  font-size: 50px;
+  font-family: sarif;
+}
+.pictures {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 1fr;
+  text-align: center;
+  margin-top: 1rem;
+}
+.comment-1 {
+  padding: 15px 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid whitesmoke;
+  margin: 15px;
+  border-radius: 3rem;
+}
+
+.msg {
+  color: whitesmoke;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.img-1 {
+  border: 1px solid;
+  border-radius: 50%;
+}
+.two {
+  color: orange;
+  font-size: 20px;
+}
+/* --------------==============last section===========---------------- */
+.last-section {
+  background-color: #17171a;
+  height: 60vh;
+  width: 100%;
+}
+.last-headding {
+  text-align: center;
+  color: orange;
+  font-size: 40px;
+  padding-top: 30px;
+}
+.last-section .footer {
+  height: 40vh;
+  width: 75%;
+  padding: 0, 20px;
+  margin-left: 160px;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 10;
+  position: relative;
+  border-radius: 20px;
+  border: 2px solid rgba(225, 225, 225, 0.2);
+  backdrop-filter: blur(25px);
+  box-shadow: -15px 17px 17px rbga(10, 10, 10, 0.2);
+}
+.footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr;
+}
+.map {
+  margin-top: 15px;
+  margin-left: 30px;
+}
+.phone {
+  color: whitesmoke;
+  font-size: 25px;
+  padding-top: 20px;
+  margin-left: 40px;
+}
+.last-section .footer .footer-img {
+  padding-left: 40px;
+  padding-top: 10px;
+}
+.footer img {
+  padding: 10px;
+}
